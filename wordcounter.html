@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORCONZ</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .div1{
+            background-color: blue;
+        }
+        .type{
+            margin-top: 0%;
+            height: 80vh;
+            width: 80%;
+            margin-left: 4%;
+            
+        }
+        .ht{
+            color: red;
+            margin:auto;
+
+        }
+        .p{
+            background-color: bisque;
+        }
+        .p2{
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1 class="ht text-center">WORCONZ</h1>
+    <audio src="v.mp3" class="music"controls></audio>
+    <p class="p">A WORD COUNTER.WITH MUSIC😎😎😎😎😎😎😎😎#Vardaan By Ajey Nagar.Enjoy the music and count the words.</p>
+    <p class="p2">Import Notice-This Word Counter is in trail version till 10January|2021.So,Do not forget to give your feed back to our email by contact us page in our website.</p>
+    </div>
+    <div class="div1">
+    <textarea onkeyup="countWords(this);" class="type"></textarea>
+<span id="words-counter"></span></div>
+<script>function countWords(self) {
+    var spaces = self.value.match(/\S+/g);
+    var words = spaces ? spaces.length : 0;
+ 
+    document.getElementById("words-counter").innerHTML = words + " words";
+}</script>
+<script type="text/javascript"> var infolinks_pid = 3303885; var infolinks_wsid = 0; </script> <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
+</body>
+</html>
